@@ -2,6 +2,7 @@ import eight.myAtoi
 import io.kotest.matchers.shouldBe
 import nine.isPalindrome
 import one.twoSum
+import twenty.isValid
 
 fun main() {
     twoSum(intArrayOf(1,2,3), 5) shouldBe intArrayOf(1, 2)
@@ -14,4 +15,8 @@ fun main() {
     isPalindrome(121) shouldBe true
     isPalindrome(-121) shouldBe false
     isPalindrome(855) shouldBe false
+
+    isValid("{ test ( string )}") shouldBe true
+    isValid("{{]]]") shouldBe false
+    isValid("{{}") shouldBe false
 }
