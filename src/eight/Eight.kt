@@ -1,5 +1,7 @@
 package eight
 
+import io.kotest.matchers.shouldBe
+
 fun myAtoi(s: String): Int {
     val trimmedString = s.trim()
     if (trimmedString.isEmpty()) return 0
@@ -32,4 +34,10 @@ fun myAtoi(s: String): Int {
     }
 
     return value * signFactor
+}
+
+fun test() {
+    myAtoi("-25") shouldBe -25
+    myAtoi("0") shouldBe 0
+    myAtoi("462523") shouldBe 462523
 }

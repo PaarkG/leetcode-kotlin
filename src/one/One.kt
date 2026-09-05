@@ -1,5 +1,6 @@
 package one
 
+import io.kotest.matchers.shouldBe
 import kotlin.collections.HashMap
 
 fun twoSum(nums: IntArray, target: Int): IntArray {
@@ -17,4 +18,9 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
     }
 
     return intArrayOf(0, 0)
+}
+
+fun test() {
+    twoSum(intArrayOf(1,2,3), 5) shouldBe intArrayOf(1, 2)
+    twoSum(intArrayOf(-1, 12, 8, 55), 54) shouldBe intArrayOf(0, 3)
 }

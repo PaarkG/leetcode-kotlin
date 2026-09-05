@@ -1,5 +1,7 @@
 package nine
 
+import io.kotest.matchers.shouldBe
+
 fun isPalindrome(x: Int): Boolean {
     val str = x.toString()
 
@@ -16,4 +18,10 @@ fun isPalindrome(x: Int): Boolean {
     }
 
     return true
+}
+
+fun test() {
+    isPalindrome(121) shouldBe true
+    isPalindrome(-121) shouldBe false
+    isPalindrome(855) shouldBe false
 }

@@ -1,5 +1,6 @@
 package twenty
 
+import io.kotest.matchers.shouldBe
 import java.util.Stack;
 
 fun isValid(s: String): Boolean {
@@ -17,4 +18,10 @@ fun isValid(s: String): Boolean {
     }
 
     return charStack.isEmpty()
+}
+
+fun test() {
+    isValid("{ test ( string )}") shouldBe true
+    isValid("{{]]]") shouldBe false
+    isValid("{{}") shouldBe false
 }

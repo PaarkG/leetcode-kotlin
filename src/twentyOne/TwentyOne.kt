@@ -1,5 +1,7 @@
 package twentyOne
 
+import io.kotest.matchers.equality.shouldBeEqualUsingFields
+
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
@@ -41,4 +43,22 @@ fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
     }
 
     return result
+}
+
+fun test() {
+    val list1 = ListNode(1)
+    list1.next = ListNode(2)
+    list1.next?.next = ListNode(4)
+
+    val list2 = ListNode(1)
+    list2.next = ListNode(3)
+    list2.next?.next = ListNode(4)
+
+    val list3 = ListNode(1)
+    list3.next = ListNode(1)
+    list3.next?.next = ListNode(2)
+    list3.next?.next?.next = ListNode(3)
+    list3.next?.next?.next?.next = ListNode(4)
+    list3.next?.next?.next?.next?.next = ListNode(4)
+    mergeTwoLists(list1, list2)?.shouldBeEqualUsingFields(list3)
 }
