@@ -8,4 +8,6 @@ fun main() {
     twenty.test()
     twentyOne.test()
     twentySeven.test()
+    twentyEight.test()
+    thirtyFive.test()
 }
