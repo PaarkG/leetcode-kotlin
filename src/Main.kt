@@ -10,4 +10,5 @@ fun main() {
     twentySeven.test()
     twentyEight.test()
     thirtyFive.test()
+    fiftyEight.test()
 }
