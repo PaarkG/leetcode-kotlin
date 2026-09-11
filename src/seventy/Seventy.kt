@@ -3,9 +3,21 @@ package seventy
 import io.kotest.matchers.shouldBe
 
 fun climbStairs(n: Int): Int {
+    return climbStairs(n, HashMap<Int, Int>())
+}
+
+fun climbStairs(n: Int, cache: HashMap<Int, Int>): Int {
     return when {
-        n <= 1 -> 1
-        else -> climbStairs(n - 1) + climbStairs(n - 2)
+        cache.contains(n) -> cache.getValue(n)
+        n <= 1 -> {
+            cache[n] = 1
+            return 1
+        }
+        else -> {
+            val ways = climbStairs(n - 1, cache) + climbStairs(n - 2, cache)
+            cache[n] = ways
+            return ways
+        }
     }
 }
 
