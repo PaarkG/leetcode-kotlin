@@ -20,6 +20,9 @@ fun main() {
     eightyEight.test()
     oneHundred.test()
     oneHundredFour.test()
+    threeHundredEightyThree.test()
+    threeHundredEightyNine.test()
+    sevenHundredSeventyOne.test()
     oneThousandFiftyOne.test()
     oneThousandTwoHundredNinetyFive.test()
 }
