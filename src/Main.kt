@@ -7,6 +7,7 @@ fun main() {
     seven.test()
     eight.test()
     nine.test()
+    twelve.test()
     fifteen.test()
     nineteen.test()
     twenty.test()
