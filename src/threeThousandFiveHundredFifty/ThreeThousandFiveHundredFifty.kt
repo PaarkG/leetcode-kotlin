@@ -3,21 +3,11 @@ package threeThousandFiveHundredFifty
 import io.kotest.matchers.shouldBe
 
 fun smallestIndex(nums: IntArray): Int {
-    for (i in nums.indices) {
-        if (sumDigits(nums[i]) == i) return i
-    }
+    for (i in nums.indices) if (sumDigits(nums[i]) == i) return i
     return -1
 }
 
-fun sumDigits(num: Int): Int {
-    val string = num.toString()
-    var sum = 0
-    for (digit in string.toCharArray()) {
-        sum += digit.code - 48
-    }
-
-    return sum
-}
+fun sumDigits(num: Int) = num.toString().toCharArray().fold(0) { acc, c -> acc + c.code - 48 }
 
 fun test() {
     smallestIndex(intArrayOf(1, 2, 3, 12, 5)) shouldBe 3
