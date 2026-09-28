@@ -33,6 +33,7 @@ fun main() {
     oneThousandFiftyOne.test()
     oneThousandOneHundredNinety.test()
     oneThousandTwoHundredNinetyFive.test()
+    oneThousandSixHundredFourteen.test()
     threeThousandFourHundredNinetyEight.test()
     threeThousandFiveHundredFifty.test()
 }
