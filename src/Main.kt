@@ -24,7 +24,7 @@ fun main() {
     ninetyFour.test()
     oneHundred.test()
     oneHundredFour.test()
-    oneHundredFour.test()
+    oneHundredEighteen.test()
     twoHundredTwentyFive.test()
     threeHundredEightyThree.test()
     threeHundredEightyNine.test()
