@@ -3,6 +3,7 @@ package sevenHundredNinetySix
 import io.kotest.matchers.shouldBe
 
 fun rotateString(s: String, goal: String): Boolean {
+    if (s == "") return true
     for (i in s.indices) {
         val before = s.substring(0, i)
         val after = s.substring(i)

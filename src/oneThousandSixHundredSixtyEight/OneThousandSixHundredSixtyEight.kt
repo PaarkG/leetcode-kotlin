@@ -3,8 +3,8 @@ package oneThousandSixHundredSixtyEight
 import io.kotest.matchers.shouldBe
 
 fun maxRepeating(sequence: String, word: String): Int {
-    var k = 0
-    while (sequence.contains(word.repeat(k + 1))) k++
+    var k = sequence.length / word.length
+    while (!sequence.contains(word.repeat(k))) k--
     return k
 }
 
