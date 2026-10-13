@@ -35,6 +35,7 @@ fun main() {
     twoHundredSeventeen.test()
     twoHundredSixtyEight.test()
     twoHundredTwentyFive.test()
+    threeHundredThirtyTwo.test()
     threeHundredThirtyEight.test()
     threeHundredEightyThree.test()
     threeHundredEightyNine.test()
