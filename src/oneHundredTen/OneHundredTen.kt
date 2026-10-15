@@ -14,7 +14,7 @@ fun isBalanced(root: TreeNode?): Boolean {
     }
 }
 
-fun height(root: TreeNode?) : Int {
+private fun height(root: TreeNode?) : Int {
     return when (root) {
         null -> 0
         else -> 1 + maxOf(height(root.left), height(root.right))
