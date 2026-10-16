@@ -10,6 +10,7 @@ fun main() {
     eleven.test()
     twelve.test()
     fifteen.test()
+    seventeen.test()
     nineteen.test()
     twenty.test()
     twentyOne.test()
