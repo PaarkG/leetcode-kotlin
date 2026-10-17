@@ -18,6 +18,7 @@ fun main() {
     twentySeven.test()
     twentyEight.test()
     thirtyFive.test()
+    fourtyFive.test()
     fiftyFive.test()
     fiftyEight.test()
     sixtyTwo.test()
