@@ -1,13 +1,13 @@
 package fourtyFive
 
 import io.kotest.matchers.shouldBe
+import kotlin.math.pow
 
 fun jump(nums: IntArray): Int {
-    val table = IntArray(nums.size) { 1000 }
+    val table = IntArray(nums.size) { 1000 * 10.0.pow(4.0).toInt() }
     table[0] = 0
-    for (i in 0 ..< nums.size) {
-        val num = nums[i]
-        for (j in 1 .. num) {
+    for ((i, num) in nums.withIndex()) {
+        for (j in 1..num) {
             if (i + j < nums.size) {
                 table[i + j] = minOf(table[i + j], table[i] + 1)
             }
