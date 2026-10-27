@@ -3,6 +3,7 @@
  */
 fun main() {
     one.test()
+    three.test()
     five.test()
     seven.test()
     eight.test()
