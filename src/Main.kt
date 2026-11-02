@@ -5,6 +5,7 @@ fun main() {
     one.test()
     three.test()
     five.test()
+    six.test()
     seven.test()
     eight.test()
     nine.test()
