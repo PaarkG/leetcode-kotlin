@@ -5,8 +5,8 @@ Welcome to my journey to complete at least one LeetCode problem per day in Kotli
 Currently I am mostly doing easy and medium problems.
 
 Started: 9/2/2026\
-Latest Completed: 11/6/2026\
-Current Streak: 66 days
+Latest Completed: 11/7/2026\
+Current Streak: 67 days
 
 Getting back into other projects, but I'll try to keep this going for a while.\
-66!
+67!
