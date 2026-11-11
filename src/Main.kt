@@ -42,6 +42,7 @@ fun main() {
     oneHundredThirtySix.test()
     oneHundredThirtyNine.test()
     oneHundredFiftyOne.test()
+    oneHundredSixtyNine.test()
     oneHundredNinetyEight.test()
     twoHundredTwo.test()
     twoHundredFive.test()
