@@ -19,7 +19,7 @@ fun majorityElement(nums: IntArray): Int {
         if (count > nums.size / 2) return prev
     }
 
-    return -1
+    return prev
 }
 
 fun test() {
