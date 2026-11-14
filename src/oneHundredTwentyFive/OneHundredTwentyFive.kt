@@ -19,5 +19,5 @@ fun isPalindrome(s: String): Boolean {
 fun test() {
     isPalindrome("racecar") shouldBe true
     isPalindrome("ra::c,e car") shouldBe true
-    isPalindrome("ra::car") shouldBe false
+    isPalindrome("rae::car") shouldBe false
 }
